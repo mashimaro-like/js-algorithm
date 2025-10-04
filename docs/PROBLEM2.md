@@ -2,10 +2,11 @@
 
 암호문을 좋아하는 괴짜 개발자 브라운이 이번에는 중복 문자를 이용한 새로운 암호를 만들었다. 예를 들어 "browoanoommnaon"이라는 암호문은 다음과 같은 순서로 해독할 수 있다.
 
-1. "browoanoommnaon"
-2. "browoannaon"
-3. "browoaaon"
-4. "browoon"
+연속되는 문자가 있으면 삭제
+1. "browoanoommnaon" 여기서 중복되는 oo, mm을 삭제
+2. "browoannaon"     nn 삭제
+3. "browoaaon"       aa 삭제
+4. "browoon"         oo 삭제
 5. "brown"
 
 임의의 문자열 cryptogram이 매개변수로 주어질 때, 연속하는 중복 문자들을 삭제한 결과를 return 하도록 solution 메서드를 완성하라.
@@ -21,4 +22,4 @@
 | ----------------- | ------- |
 | "browoanoommnaon" | "brown" |
 | "zyelleyz"        | ""      |
-
+zyelleyz는 단계로 수행하면 모두가 동일한 문장이기에 전부 삭제
